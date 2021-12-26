@@ -1,0 +1,126 @@
+/*
+  Color de fondo: hsl(185, 75%, 39%)
+  Color del texto gris: hsl(227, 10%, 46%)
+*/
+
+:root{
+  --card-width: 350px;
+  --card-height: 400px;
+}
+
+body{
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  user-select: none;
+  color: hsl(227, 10%, 46%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-image{
+  position: absolute;
+  z-index: -10;
+}
+
+.bg-image-top{
+  left: -500px;
+  top: -600px;
+}
+
+.bg-image-bottom{
+  right: -600px;
+  bottom: -500px;
+}
+
+
+/* Tarjeta */
+
+.card{
+  background-color: white;
+  width: var(--card-width);
+  height: var(--card-height);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.image-viktor{
+  position: absolute;
+  left: 127px;
+  top: 68px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: white;
+}
+
+.card__body{
+  height: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+}
+
+.card__text{
+  font-size: 1.1rem;
+  margin-top: .3em;
+  font-weight: 500;
+  line-height: .5;
+}
+
+.card__text-ligth{
+  opacity: .6;
+  font-size: 1rem;
+}
+
+.card__section{
+  width: 70px;
+  line-height: .6;
+  display: inline-block;
+  margin: 1.5em 1.3em;
+  padding-top: 10px;
+}
+
+/* @media (max-width: 600px) {
+
+    .card{
+      margin-left: 45vw;
+      --card-width: 600px;
+      --card-height: 850px;
+      border-radius: 25px;
+    }
+
+    .bg-image-header{
+      width: 100%;
+    }
+
+    .image-viktor{
+      width: 50%;
+      margin-left: 28px;
+    }
+
+    .card__body{
+      height: 250px;
+      border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+    .description{
+      margin-top: 200px;
+      width: 350px;
+    }
+
+    .card-section{
+      width: 140px;
+    }
+
+    .text{
+      font-size: 3rem;
+    }
+
+    .text-ligth{
+      font-size: 2.5rem;
+    }
+} */
